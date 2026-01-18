@@ -101,11 +101,14 @@ export default function Home() {
       <Section variant="alt">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="relative order-2 lg:order-1">
-            {/* Placeholder for philosophy image */}
-            <div className="aspect-square overflow-hidden bg-blush">
-              <div className="flex h-full items-center justify-center">
-                <span className="text-sm text-taupe">Philosophy Image</span>
-              </div>
+            <div className="aspect-square overflow-hidden rounded-tr-[80px] rounded-bl-[80px] shadow-2xl">
+              <Image
+                src="/pexels-matej-simko-809440051-19936754.jpg"
+                alt="Aesthetic consultation with client"
+                width={800}
+                height={800}
+                className="h-full w-full object-cover object-center"
+              />
             </div>
           </div>
           <div className="flex flex-col justify-center order-1 lg:order-2">
@@ -232,11 +235,14 @@ export default function Home() {
             </div>
           </div>
           <div className="relative">
-            {/* Placeholder for founder image */}
-            <div className="aspect-[4/5] overflow-hidden bg-blush">
-              <div className="flex h-full items-center justify-center">
-                <span className="text-sm text-taupe">Founder Image</span>
-              </div>
+            <div className="aspect-[4/5] overflow-hidden rounded-tl-[80px] rounded-br-[80px] shadow-2xl">
+              <Image
+                src="/founder-profile.PNG"
+                alt="Founder of Refine Partners"
+                width={800}
+                height={1000}
+                className="h-full w-full object-cover object-[center_20%]"
+              />
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/button";
 import { Section, SectionHeader } from "@/components/section";
+import Image from "next/image";
 
 const values = [
   {
@@ -46,11 +47,14 @@ export default function About() {
               </p>
             </div>
             <div className="relative">
-              {/* Placeholder for about hero image */}
-              <div className="aspect-[4/5] overflow-hidden bg-blush">
-                <div className="flex h-full items-center justify-center">
-                  <span className="text-sm text-taupe">About Hero Image</span>
-                </div>
+              <div className="aspect-[4/5] overflow-hidden rounded-tl-[80px] rounded-br-[80px] shadow-2xl">
+                <Image
+                  src="/about-hero-image.png"
+                  alt="About Refine Partners"
+                  width={800}
+                  height={1000}
+                  className="h-full w-full object-cover object-center"
+                />
               </div>
             </div>
           </div>
@@ -96,11 +100,14 @@ export default function About() {
       <Section>
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="relative">
-            {/* Placeholder for founder image */}
-            <div className="aspect-[3/4] overflow-hidden bg-blush">
-              <div className="flex h-full items-center justify-center">
-                <span className="text-sm text-taupe">Founder Portrait</span>
-              </div>
+            <div className="aspect-[3/4] overflow-hidden rounded-tl-[80px] rounded-br-[80px] shadow-2xl">
+              <Image
+                src="/founder-profile.PNG"
+                alt="Founder of Refine Partners"
+                width={600}
+                height={800}
+                className="h-full w-full object-cover object-[center_20%]"
+              />
             </div>
           </div>
           <div className="flex flex-col justify-center">
@@ -108,12 +115,12 @@ export default function About() {
               Founder
             </p>
             <h2 className="mt-2 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
-              [Founder Name]
+              Sarah Al-Sheikhly
             </h2>
             <p className="mt-2 text-lg text-taupe">Founder & Lead Advisor</p>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-charcoal-light">
               <p>
-                With a background spanning [industry/experience], [Founder Name]
+                With a background spanning [industry/experience], Sarah Al-Sheikhly
                 brings a unique perspective to aesthetic advisory. Her approach
                 combines analytical rigor with genuine empathy, understanding
                 that aesthetic decisions are deeply personal.
@@ -126,7 +133,7 @@ export default function About() {
                 dermatologists and medical spa practitioners.
               </p>
               <p>
-                [Founder Name] believes that every woman has the right to feel
+                Sarah Al-Sheikhly believes that every woman has the right to feel
                 confident in her appearance—and in her decisions about it.
               </p>
             </div>
@@ -155,19 +162,49 @@ export default function About() {
 
       {/* The Team */}
       <Section>
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-medium uppercase tracking-widest text-gold">
-            Our Team
-          </p>
-          <h2 className="mt-2 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
-            Supported by Excellence
-          </h2>
-          <p className="mt-4 text-lg leading-relaxed text-charcoal-light">
-            While [Founder Name] leads all consultations, she is supported by a
-            dedicated team that ensures every client receives attentive,
-            personalized service. Our team shares a commitment to discretion,
-            expertise, and genuine care for every woman we work with.
-          </p>
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center">
+            <p className="text-sm font-medium uppercase tracking-widest text-gold">
+              Our Team
+            </p>
+            <h2 className="mt-2 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
+              Supported by Excellence
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-charcoal-light">
+              While Sarah Al-Sheikhly leads all consultations, she is supported by a
+              dedicated team that ensures every client receives attentive,
+              personalized service. Our team shares a commitment to discretion,
+              expertise, and genuine care for every woman we work with.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 sm:grid-cols-2">
+            <div className="text-center">
+              <div className="mx-auto aspect-[3/4] max-w-[280px] overflow-hidden rounded-tl-[60px] rounded-br-[60px] shadow-lg">
+                <Image
+                  src="/team-member-1.PNG"
+                  alt="Team member"
+                  width={280}
+                  height={373}
+                  className="h-full w-full object-cover object-[center_20%]"
+                />
+              </div>
+              <h3 className="mt-4 font-serif text-xl font-semibold">Emily Chen</h3>
+              <p className="mt-1 text-sm text-taupe">Client Relations Manager</p>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto aspect-[3/4] max-w-[280px] overflow-hidden rounded-tl-[60px] rounded-br-[60px] shadow-lg">
+                <Image
+                  src="/team-member-2.PNG"
+                  alt="Team member"
+                  width={280}
+                  height={373}
+                  className="h-full w-full object-cover object-[center_20%]"
+                />
+              </div>
+              <h3 className="mt-4 font-serif text-xl font-semibold">Rachel Thornton</h3>
+              <p className="mt-1 text-sm text-taupe">Research & Provider Liaison</p>
+            </div>
+          </div>
         </div>
       </Section>
 

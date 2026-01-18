@@ -1,5 +1,6 @@
 import { Button } from "@/components/button";
 import { Section, SectionHeader } from "@/components/section";
+import Image from "next/image";
 
 const services = [
   {
@@ -14,6 +15,7 @@ const services = [
       "Provider matching and vetting",
       "Treatment timeline planning",
     ],
+    image: "/pexels-cottonbro-7585314.jpg",
   },
   {
     id: "skin-health",
@@ -27,6 +29,7 @@ const services = [
       "Provider and product guidance",
       "Long-term skin health strategy",
     ],
+    image: "/pexels-ron-lach-8140913.jpg",
   },
   {
     id: "body-contouring",
@@ -40,6 +43,7 @@ const services = [
       "Provider research and recommendations",
       "Recovery planning guidance",
     ],
+    image: "/pexels-ganinph-7772656.jpg",
   },
   {
     id: "preventative-aging",
@@ -53,6 +57,7 @@ const services = [
       "Age-appropriate care recommendations",
       "Long-term maintenance strategies",
     ],
+    image: "/pexels-aging.jpg",
   },
   {
     id: "provider-navigation",
@@ -66,6 +71,7 @@ const services = [
       "Second opinion facilitation",
       "Ongoing provider relationship support",
     ],
+    image: "/pexels-karola-g-8545586.jpg",
   },
 ];
 
@@ -162,14 +168,25 @@ export default function Services() {
                 </ul>
               </div>
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                {/* Placeholder for service image */}
-                <div className="aspect-[4/3] overflow-hidden bg-blush">
-                  <div className="flex h-full items-center justify-center">
-                    <span className="text-sm text-taupe">
-                      {service.title} Image
-                    </span>
+                {service.image ? (
+                  <div className="aspect-[4/3] overflow-hidden rounded-tl-[60px] rounded-br-[60px] shadow-lg">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      width={800}
+                      height={600}
+                      className="h-full w-full object-cover object-center"
+                    />
                   </div>
-                </div>
+                ) : (
+                  <div className="aspect-[4/3] overflow-hidden bg-blush rounded-tl-[60px] rounded-br-[60px]">
+                    <div className="flex h-full items-center justify-center">
+                      <span className="text-sm text-taupe">
+                        {service.title} Image
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           ))}
