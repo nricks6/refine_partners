@@ -55,16 +55,16 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative flex min-h-screen items-center bg-cream pt-20">
+      <section className="relative flex min-h-screen items-center bg-cream pt-20 watermark-bg overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col justify-center">
               <p className="text-sm font-medium uppercase tracking-widest text-gold">
-                Aesthetic Advisory
+                Aesthetic advisory
               </p>
               <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-                Elevate Your Approach to{" "}
-                <span className="text-taupe">Aesthetic Care</span>
+                Elevate your approach to{" "}
+                <span className="text-taupe">aesthetic care</span>
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-charcoal-light">
                 A distinguished group of women consulting on facial
@@ -113,10 +113,10 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-center order-1 lg:order-2">
             <p className="text-sm font-medium uppercase tracking-widest text-gold">
-              Our Philosophy
+              Our philosophy
             </p>
             <h2 className="mt-2 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
-              Beauty on Your Terms
+              Beauty on your terms
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-charcoal-light">
               We believe that aesthetic care should be empowering, not
@@ -138,10 +138,10 @@ export default function Home() {
       </Section>
 
       {/* Services Section */}
-      <Section>
+      <Section watermark>
         <SectionHeader
-          eyebrow="What We Offer"
-          title="Advisory Services"
+          eyebrow="What we offer"
+          title="Advisory services"
           description="Comprehensive guidance across the full spectrum of aesthetic care, tailored to your individual needs and aspirations."
         />
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -179,8 +179,8 @@ export default function Home() {
       {/* Testimonials Section */}
       <Section variant="alt">
         <SectionHeader
-          eyebrow="Client Experiences"
-          title="Trusted by Women Who Expect Excellence"
+          eyebrow="Client experiences"
+          title="Trusted by women who expect excellence"
         />
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
@@ -208,14 +208,14 @@ export default function Home() {
       </Section>
 
       {/* Founder Spotlight */}
-      <Section>
+      <Section watermark="single">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center">
             <p className="text-sm font-medium uppercase tracking-widest text-gold">
-              Meet the Founder
+              Meet the founder
             </p>
             <h2 className="mt-2 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
-              A Vision for Better Aesthetic Care
+              A vision for better aesthetic care
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-charcoal-light">
               Refine Partners was born from a simple observation: navigating the
@@ -252,7 +252,7 @@ export default function Home() {
       <Section variant="dark">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-            Ready to Begin Your Journey?
+            Ready to begin your journey?
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-cream/70">
             Schedule a consultation to discuss your goals and discover how we

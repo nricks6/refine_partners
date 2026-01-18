@@ -46,7 +46,7 @@ export default function Contact() {
   if (isSubmitted) {
     return (
       <>
-        <section className="flex min-h-screen items-center bg-cream pt-20">
+        <section className="flex min-h-screen items-center bg-cream pt-20 watermark-single overflow-hidden">
           <div className="mx-auto max-w-2xl px-6 py-20 text-center lg:px-8">
             <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-blush">
               <svg
@@ -64,7 +64,7 @@ export default function Contact() {
               </svg>
             </div>
             <h1 className="font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
-              Thank You for Reaching Out
+              Thank you for reaching out
             </h1>
             <p className="mt-4 text-lg leading-relaxed text-charcoal-light">
               We&apos;ve received your consultation request and will be in touch
@@ -84,14 +84,14 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-cream pt-32 pb-20">
+      <section className="bg-cream pt-32 pb-20 watermark-single overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-medium uppercase tracking-widest text-gold">
-              Contact Us
+              Contact us
             </p>
             <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-              Begin Your Consultation
+              Begin your consultation
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-charcoal-light">
               Share a bit about yourself and your goals, and we&apos;ll be in touch
@@ -259,10 +259,10 @@ export default function Contact() {
       </Section>
 
       {/* What Happens Next */}
-      <Section>
+      <Section watermark>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-2xl font-semibold tracking-tight sm:text-3xl">
-            What Happens Next
+            What happens next
           </h2>
           <div className="mt-8 grid gap-8 text-left sm:grid-cols-3">
             <div>

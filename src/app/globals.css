@@ -49,3 +49,52 @@ html {
   background-color: var(--color-blush);
   color: var(--color-charcoal);
 }
+
+/* Watermark background pattern */
+.watermark-bg {
+  position: relative;
+}
+
+.watermark-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/Refine Partners Icon Gold.png');
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.watermark-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Single watermark for smaller sections */
+.watermark-single {
+  position: relative;
+}
+
+.watermark-single::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-image: url('/Refine Partners Icon Gold.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.watermark-single > * {
+  position: relative;
+  z-index: 1;
+}

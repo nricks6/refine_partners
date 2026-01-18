@@ -29,15 +29,15 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-cream pt-32 pb-20">
+      <section className="bg-cream pt-32 pb-20 watermark-bg overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col justify-center">
               <p className="text-sm font-medium uppercase tracking-widest text-gold">
-                About Us
+                About us
               </p>
               <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-                Redefining Aesthetic Guidance
+                Redefining aesthetic guidance
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-charcoal-light">
                 Refine Partners was founded on a simple premise: every woman
@@ -65,10 +65,10 @@ export default function About() {
       <Section variant="alt">
         <div className="mx-auto max-w-3xl">
           <p className="text-sm font-medium uppercase tracking-widest text-gold">
-            Our Story
+            Our story
           </p>
           <h2 className="mt-2 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
-            From Personal Journey to Professional Mission
+            From personal journey to professional mission
           </h2>
           <div className="mt-8 space-y-6 text-lg leading-relaxed text-charcoal-light">
             <p>
@@ -97,7 +97,7 @@ export default function About() {
       </Section>
 
       {/* Founder Profile */}
-      <Section>
+      <Section watermark="single">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="relative">
             <div className="aspect-[3/4] overflow-hidden rounded-tl-[80px] rounded-br-[80px] shadow-2xl">
@@ -144,8 +144,8 @@ export default function About() {
       {/* Values */}
       <Section variant="alt">
         <SectionHeader
-          eyebrow="Our Values"
-          title="What Guides Us"
+          eyebrow="Our values"
+          title="What guides us"
           description="These principles inform every consultation and recommendation we make."
         />
         <div className="mt-16 grid gap-8 sm:grid-cols-2">
@@ -161,14 +161,14 @@ export default function About() {
       </Section>
 
       {/* The Team */}
-      <Section>
+      <Section watermark>
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
             <p className="text-sm font-medium uppercase tracking-widest text-gold">
-              Our Team
+              Our team
             </p>
             <h2 className="mt-2 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
-              Supported by Excellence
+              Supported by excellence
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-charcoal-light">
               While Sarah Al-Sheikhly leads all consultations, she is supported by a
@@ -212,7 +212,7 @@ export default function About() {
       <Section variant="dark">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-            Begin Your Journey With Us
+            Begin your journey with us
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-cream/70">
             Discover how personalized aesthetic guidance can transform your

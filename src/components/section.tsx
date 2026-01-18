@@ -3,6 +3,7 @@ type SectionProps = {
   className?: string;
   id?: string;
   variant?: "default" | "alt" | "dark";
+  watermark?: boolean | "single";
 };
 
 export function Section({
@@ -10,6 +11,7 @@ export function Section({
   className = "",
   id,
   variant = "default",
+  watermark = false,
 }: SectionProps) {
   const variants = {
     default: "bg-cream",
@@ -17,8 +19,10 @@ export function Section({
     dark: "bg-charcoal text-cream",
   };
 
+  const watermarkClass = watermark === "single" ? "watermark-single" : watermark ? "watermark-bg" : "";
+
   return (
-    <section id={id} className={`py-20 lg:py-28 ${variants[variant]} ${className}`}>
+    <section id={id} className={`py-20 lg:py-28 ${variants[variant]} ${watermarkClass} ${className}`}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">{children}</div>
     </section>
   );

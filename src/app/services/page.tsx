@@ -106,14 +106,14 @@ export default function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-cream pt-32 pb-20">
+      <section className="bg-cream pt-32 pb-20 watermark-single overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-medium uppercase tracking-widest text-gold">
-              Our Services
+              Our services
             </p>
             <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-              Comprehensive Aesthetic Advisory
+              Comprehensive aesthetic advisory
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-charcoal-light">
               From your first consideration to ongoing care, we provide expert
@@ -194,10 +194,10 @@ export default function Services() {
       </Section>
 
       {/* Process Section */}
-      <Section>
+      <Section watermark>
         <SectionHeader
-          eyebrow="How It Works"
-          title="Our Process"
+          eyebrow="How it works"
+          title="Our process"
           description="A structured approach designed to give you clarity and confidence at every step."
         />
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -221,10 +221,10 @@ export default function Services() {
       <Section variant="alt">
         <div className="mx-auto max-w-3xl">
           <p className="text-sm font-medium uppercase tracking-widest text-gold">
-            What to Expect
+            What to expect
           </p>
           <h2 className="mt-2 font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
-            Your Consultation Experience
+            Your consultation experience
           </h2>
           <div className="mt-8 space-y-6 text-lg leading-relaxed text-charcoal-light">
             <p>
@@ -253,7 +253,7 @@ export default function Services() {
       <Section variant="dark">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-            Ready to Explore Your Options?
+            Ready to explore your options?
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-cream/70">
             Book a consultation to discuss your goals and discover how we can
